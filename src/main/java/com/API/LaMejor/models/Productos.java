@@ -16,8 +16,8 @@ import java.util.Date;
 @Cacheable(false)
 public class Productos {
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "producto_generador")
     @SequenceGenerator(name = "producto_generador", sequenceName = "productos_secuencia", initialValue = 1,allocationSize = 1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "producto_generador")
     @Column(name = "producto_id")
     private Long productoId;
     @Column(nullable = false,updatable = false)

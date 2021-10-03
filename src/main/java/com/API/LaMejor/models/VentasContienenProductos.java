@@ -19,6 +19,6 @@ public class VentasContienenProductos implements Serializable {
     private VentasContienenProductosId id;
     @Column(nullable = false,updatable = false)
     private double ventasContienenProductosUnidades;
-    @Column(nullable = false,updatable = true)
+    @Column(nullable = true,updatable = true)
     private double ventasContienenProductosValor;
 }

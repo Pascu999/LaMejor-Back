@@ -15,9 +15,9 @@ import java.util.Date;
 @Cacheable(false)
 public class Ventas {
     @Id
-    @GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "ventas_generador")
-    @SequenceGenerator(name = "ventas_generador", sequenceName = "ventas_secuencia", initialValue = 1,allocationSize = 1)
-    @Column(name = "venta_id", nullable = true, updatable = false)
+    @SequenceGenerator(name = "venta_generador", sequenceName = "ventas_secuencia", initialValue = 1,allocationSize = 1)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE,generator = "venta_generador")
+    @Column(name = "venta_id")
     private Long ventaId;
     @Column(nullable = true ,updatable = false)
     private Date ventaFecha;
@@ -27,8 +27,7 @@ public class Ventas {
     private int ventaEstado;
 
     @PrePersist
-    public void asignarEstadoYFecha() {
-        this.ventaFecha = new Date();
+    public void asignarEstado() {
         this.ventaEstado = 1;
 
     }
