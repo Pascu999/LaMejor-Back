@@ -30,7 +30,7 @@ public class Productos {
     private double productoPrecio;
     @Column(nullable = false,updatable = true)
     private int productoExistencias;
-    @Column(nullable = true,updatable = false,columnDefinition = "integer default 1")
+    @Column(nullable = true,updatable = true,columnDefinition = "integer default 1")
     private int productoEstado;
 
     @PrePersist
