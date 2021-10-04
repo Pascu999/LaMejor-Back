@@ -24,7 +24,7 @@ public class Productos {
     private String productoNombre;
     @Column(nullable = false,updatable = false)
     private String productoDescripcion;
-    @Column(nullable = true,updatable = true)
+    @Column(nullable = true,updatable =  false)
     private Date productoFechaCreacion;
     @Column(nullable = false,updatable = true)
     private double productoPrecio;
