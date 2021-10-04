@@ -29,6 +29,8 @@ public class Productos {
     @Column(nullable = false,updatable = true)
     private double productoPrecio;
     @Column(nullable = false,updatable = true)
+    private double productoPrecioProveedor;
+    @Column(nullable = false,updatable = true)
     private int productoExistencias;
     @Column(nullable = true,updatable = true,columnDefinition = "integer default 1")
     private int productoEstado;
