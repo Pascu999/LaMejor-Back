@@ -50,6 +50,13 @@ public class GraficasControlador {
         return new ResponseEntity<>(ventasMes, HttpStatus.OK);
     }
 
+    @GetMapping("/productosRenovar")
+
+    public ResponseEntity<List<ProductosRenovarProyeccion>> obtenerProductosRenovar(){
+        List<ProductosRenovarProyeccion> productosRenovar = productosServicio.obtenerProductosRenovar();
+        return new ResponseEntity<>(productosRenovar, HttpStatus.OK);
+    }
+
 
 
 }

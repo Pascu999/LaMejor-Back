@@ -1,8 +1,8 @@
 package com.API.LaMejor.proyecciones;
 
 public interface MasVendidosProyeccion {
-    Double getVentasProducto();
-    String getProductoNombre();
-    int getProductoId();
-    Double getProductoPrecio();
+    Double getVentas_producto();
+    String getProducto_nombre();
+    int getProducto_id();
+    Double getProducto_precio();
 }

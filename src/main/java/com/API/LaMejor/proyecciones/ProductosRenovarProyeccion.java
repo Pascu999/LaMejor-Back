@@ -1,10 +1,11 @@
 package com.API.LaMejor.proyecciones;
 
 public interface ProductosRenovarProyeccion {
-    int getProductoId();
-    String getProductoNombre();
-    String getProductoDescripcion();
-    int getProductoExistencias();
-    Double getProductoPrecio();
-    String getProductoPrecioProveedor();
+
+    Long getProducto_id();
+    String getProducto_nombre();
+    String getProducto_descripcion();
+    int getProducto_existencias();
+    Double getProducto_precio();
+    Double getProducto_precio_proveedor();
 }
